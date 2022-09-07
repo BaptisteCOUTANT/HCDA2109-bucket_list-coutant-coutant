@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    {% block stylesheets %}{{ encore_entry_link_tags('app') }}{% endblock %}
+    <title>{% block title %}Bucket-list | Baptiste Coutant{% endblock %}</title>
+    {% block head %}{% endblock %}
+</head>
+
+<header>
+    {% block header %}{% endblock %}
+</header>
+
+<body style="min-height: 100vh">
+{% block main %}{% endblock %}
+{% block javascripts %}{{ encore_entry_script_tags('app') }}{% endblock %}
+{% block footer %}{% endblock %}
+</body>
+
+</html>
